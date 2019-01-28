@@ -160,7 +160,7 @@
 <p><img src="https://techimg.ziroom.com/1548644022989.png" alt="1548644022989"></p>
 <p><img src="https://techimg.ziroom.com/1548644033842.png" alt="1548644033842"></p>
 <h3 id="开放平台的技术设计"><a href="#开放平台的技术设计" class="headerlink" title="开放平台的技术设计"></a>开放平台的技术设计</h3><p>​    博主在五年前接触到的第一款开放平台叫<a href="https://github.com/itstamen/rop" target="_blank" rel="noopener">rop</a> , rop的设计非常优秀，基于spring mvc的架构，RopServlet类似于<em>DispatcherServlet</em>, 负责截获http请求然后转由rop处理。</p>
-<p><img src="http://dl.iteye.com/upload/attachment/0071/9536/4be7da56-d8d9-392f-854b-672d5fdac86a.jpg" alt="img"></p>
+<p><img src="https://techimg.ziroom.com/TIM%E5%9B%BE%E7%89%8720190128183138.png" alt="img"></p>
 <p>这套架构放在目前依然有很高的学习价值。</p>
 <p>但放眼现在，满足条件的框架已经不胜枚举，有基于OpenResty的成熟产品kong,还有基于java的zuul,spring cloud gateway。从可维护性和性能上来说，spring cloud gateway都更胜一筹，spring cloud gateway基于spring5的webflux模块开发，使用的服务器为reactor  netty,  异步化的架构对于这种场景来说在合适不过。</p>
 <p><img src="https://raw.githubusercontent.com/spring-cloud/spring-cloud-gateway/master/docs/src/main/asciidoc/images/spring_cloud_gateway_diagram.png" alt="Spring Cloud Gateway Diagram"></p>
