@@ -157,8 +157,8 @@
 <li>开放平台本身承担的功能类似于API  Gateway,  需要转发请求到对应的后台服务，还要承担接口鉴权验签的责任，100%保障业务接口的安全。监控的维度上，还需要获取每个API调用频次，方便日后根据API来计费使用。自身也需要具备限流，熔断等基础功能，提供高可用性。</li>
 </ol>
 <p>  在调研的过程中，参考了别的公司对于开放平台的设计。下图是易宝开放平台的设计：</p>
-<p><img src="C:\Users\homelink\AppData\Roaming\Typora\typora-user-images\1548644022989.png" alt="1548644022989"></p>
-<p><img src="C:\Users\homelink\AppData\Roaming\Typora\typora-user-images\1548644033842.png" alt="1548644033842"></p>
+<p><img src="https://techimg.ziroom.com/1548644022989.png" alt="1548644022989"></p>
+<p><img src="https://techimg.ziroom.com/1548644033842.png" alt="1548644033842"></p>
 <h3 id="开放平台的技术设计"><a href="#开放平台的技术设计" class="headerlink" title="开放平台的技术设计"></a>开放平台的技术设计</h3><p>​    博主在五年前接触到的第一款开放平台叫<a href="https://github.com/itstamen/rop" target="_blank" rel="noopener">rop</a> , rop的设计非常优秀，基于spring mvc的架构，RopServlet类似于<em>DispatcherServlet</em>, 负责截获http请求然后转由rop处理。</p>
 <p><img src="http://dl.iteye.com/upload/attachment/0071/9536/4be7da56-d8d9-392f-854b-672d5fdac86a.jpg" alt="img"></p>
 <p>这套架构放在目前依然有很高的学习价值。</p>
@@ -186,7 +186,6 @@
 <p><a href="https://github.com/spring-cloud/spring-cloud-gateway/blob/master/docs/src/main/asciidoc/spring-cloud-gateway.adoc" target="_blank" rel="noopener">https://github.com/spring-cloud/spring-cloud-gateway/blob/master/docs/src/main/asciidoc/spring-cloud-gateway.adoc</a></p>
 <p>在具体的使用过程中，博主扩展了router，将路由相关的信息存放到mysql中，5分钟刷新一次cache，便于对路由的管理。</p>
 <p>使用过程中遇到了版本的问题，导致form表单的形式转发请求失败，在issue中发现了相关的解决方案。所以这里也要提醒大家有问题的时候多去github找找相关的issue，说不定你踩过的坑就有别人踩过。</p>
-<p>下图是目前开放平台的例图：</p>
 </section>
     <!-- Tags START -->
     
