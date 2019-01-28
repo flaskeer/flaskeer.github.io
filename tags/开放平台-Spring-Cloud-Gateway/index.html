@@ -10,7 +10,7 @@
   
   <title>
     
-      Tags | asterisk&#39;s blog
+      asterisk&#39;s blog
     
   </title>
   <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -138,42 +138,35 @@
 </header>
 
     <div id="article-banner">
-  <h2>Tags</h2>
-  <p class="post-date">标签检索</p>
+  <h2>Archives</h2>
+  <p class="post-date">文章归档</p>
 </div>
-<main class="app-body">
-  <div id="tag-cloud">
+<main class="app-body" id="archives">
+  
+  
+  
+    <section class="time-section">
+  <h1 class="section-year">
+    2019
+  </h1>
+  <div class="section-list">
     
-      <a class="tag0" data-name="tag-开放平台 Spring Cloud Gateway">开放平台 Spring Cloud Gateway</a>
+    
+      <div class="section-list-item">
+        <a href="/2019/01/28/openapi-design/" class="archive-title">开放平台的设计</a>
+        <p class="archive-date">01-28</p>
+      </div>
     
   </div>
+</section>
   
-    <div class="tag-list">
-      <h3 class="tag-name" id="tag-开放平台 Spring Cloud Gateway">开放平台 Spring Cloud Gateway</h3>
-      
-        <ul class="tag-preview">
-          <li>
-            <a href="/2019/01/28/openapi-design/">开放平台的设计</a>
-          </li>
-        </ul>
-        
-    </div>
-    
 </main>
 
 <script>
   (function () {
-    var url = 'http://flaskeer.github.io/tags/index.html'
-    $('#article-banner').geopattern(url)
-    $('.header').removeClass('fixed-header')
-
-    var tag = location.hash.replace('#', '')
-    if (tag) {
-      var tagId = "#tag-" + tag;
-      $("html, body").animate({
-        scrollTop: $(tagId).offset().top 
-      }, 400)
-    }
+    var url = 'http://flaskeer.github.io/tags/开放平台-Spring-Cloud-Gateway/index.html';
+    $('#article-banner').geopattern(url);
+    $('.header').removeClass('fixed-header');
   })();
 </script>
     <div class="scroll-top">
